@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #txt{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            letter-spacing: 4px;
+            font-size: 70px;
+            font-weight: 700;
+            position: relative;
+            transform-style: preserve-3d;
+            -webkit-perspective: 100px;
+
+        }
+
+        #txt >b{
+            height: 80px;
+            box-shadow:  0px 30px 15px gray;
+            color: azure;
+            background: red;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-transform-origin:botton ;
+            transform: rotate(-85deg);
+            animation: getup;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        #txt.b:nth-child(1){
+            animation-delay: 0.50s;
+              }
+              #txt>b:nth-child(2){
+                animation-delay: 0.25s;
+              }
+              #txt>b:nth-child(3){
+                animation-delay: 0.50s;
+              }
+
+              #txt>b:nth-child(4){
+                animation-delay:0.75s;
+              }
+              #txt>b:nth-child(5){
+                animation-delay: 15;
+              }
+              #txt>b:nth-child(6){
+                animation-delay: 15;
+              }
+              @keyframes getup{
+                10%,50%{
+                    transform:rotatex(0);
+                 }
+                 0%,60%,1005{
+                    transform:rotate(-85deg)
+                 }
+              }
+               </style>
+               </head>
+<body>
+  <div id="txt">
+        <b>N</b> <b>I</b> <b>K</b> <b>S</b> 
+    </div>
+    
+</body>
+</html>

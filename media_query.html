@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Architecture</title>
+    <style>
+        .box{
+            width: 100%;
+            height: auto;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            font-size: 24px;
+            margin: 20px auto;
+            border: 2px solid red;
+            border-radius: 20px;
+
+
+        }
+        .info{
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: aqua (185, 236, 236);
+            color: black;
+            font-size: 18px;
+            border-left: 6px solid gray;
+            margin-bottom: 20px;
+
+
+        }
+        .responsive-image{
+            width: 100%;
+            max-width: 600px;
+            border: 4px solid red;
+            padding: 30px;
+            margin: auto;
+
+
+        }
+        @media(max-width:480px){
+            .box{
+                background-color: blue;
+                font-size: 10px;
+                width: 80%;
+            }
+            .info{
+                background-color: aqua (227, 87, 27);
+                color: white;
+            }
+            .responsive-image{
+                display:none;
+
+            }
+
+        }
+        @media(max-width:768px){
+            .box{
+                background-color: blue (96, 95, 19);
+                font-size: 100px;
+                width: 100%;
+
+            }
+            .info{
+                background-color: red (209, 19,146);
+                color: white;
+            }
+        }
+        @media(min-width:800px) and (max-width:900px){
+            .box{
+                background-color: green (212, 223, 16);
+                font-size: 100px;
+                width: 100%;
+            }
+            .info{
+                background-color: greenyellow (17, 220, 78);
+                color: white;
+            }
+        }
+        </style>
+
+</head>
+<body>
+    <div class="box">Responsive Box</div>
+
+    <div class="info">
+        <h2>About Us</h2>
+        <p>Shivaji offered passage and his service to the Mughal emperor Aurangzeb to invade the declining Sultanate of Bijapur. After Aurangzeb's departure for the north due to a war of succession, Shivaji conquered territories ceded by Bijapur in the name of the Mughals.</p>
+         <p>Shivaji offered passage and his service to the Mughal emperor Aurangzeb to invade the declining Sultanate of Bijapur. After Aurangzeb's departure for the north due to a war of succession, Shivaji conquered territories ceded by Bijapur in the name of the Mughals.  
+        </p>
+    </div>
+    <img src="images/shivaji-maharaj.jpg" alt="image" class="responsive-image">
+</body>
+</html>
